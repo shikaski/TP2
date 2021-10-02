@@ -1,0 +1,48 @@
+.footer {
+  & {
+    max-width: 2000px;
+    width: auto;
+    height: 210px;
+    margin-top: -50px;
+    justify-content: center;
+    background-color: $verde;
+    color: white;
+    margin: 0 auto;
+  }
+  &_content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  &_texto {
+    font-size: 40px;
+    padding: 10px;
+    font-family: "Birthstone", cursive;
+  }
+  h4 {
+    margin-bottom: 15px;
+  }
+
+  &_icons {
+    img {
+      height: 40px;
+    }
+    & {
+      padding: 12px 16px;
+      gap: 10px;
+      margin: 10px;
+    }
+  }
+  &_icon {
+    padding: 5px;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+body.dark {
+  .footer {
+    background-color: $gris;
+  }
+}

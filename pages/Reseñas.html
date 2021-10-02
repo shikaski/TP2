@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reseñas</title>
+    <link rel="stylesheet" href="/index.css" />
+    <script src="../scripts/index.js" defer></script>
+    <script src="../scripts/resenaid.js" defer></script>
+  </head>
+  <body>
+    <div class="header__conteiner">
+      <div class="header">
+        <div class="header_logo">
+          <h1>CIBUS</h1>
+        </div>
+        <input type="checkbox" class="header_check" id="header_check" hidden />
+        <label for="header_check" class="header_label">
+          <img src="/img/Icons/sunny.png" alt="Sol" />
+          <img src="/img/Icons/crescent-moon.png" alt="luna" />
+          <div class="header_ball"></div>
+        </label>
+        <div class="header_nav">
+          <a href="/" class="header_item">Home</a>
+          <a href="/pages/Carta.html" class="header_item"> Carta</a>
+          <a href="/pages/Reseñas.html" class="header_item">Reseñas</a>
+          <a href="/pages/Reservas.html" class="header_item">Reservas</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="heroresena_conteiner">
+      <div class="heroresena">
+        <div class="heroresena_buscador">
+          <h2>BUSQUE SU RESEÑA</h2>
+          <p>
+            Como las reseñas son anonimas, solo se pueden buscar por su numero
+          </p>
+          <p>En este momento contamos con 100 reseñas</p>
+          <div class="heroresena_sercher">
+            <h3>BUSCADOR</h3>
+            <input type="text" name="resena" id="inputid" />
+            <br />
+            <button id="reBtn" name="reBtn">Buscar</button>
+          </div>
+        </div>
+
+        <div class="heroresena_resena">
+          <h2>RESEÑA SELECCIONADA</h2>
+          <div id="heroresena_selected" class="heroresena_selected hidden">
+            <h3 class="heroresena_text">ID: <span id="resenid"> </span></h3>
+            <h4 class="heroresena_text">Titulo: <span id="resenti"> </span></h4>
+            <h4 class="heroresena_text">Reseña: <span id="resena"> </span></h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer_content">
+        <h4 class="footer_texto">Restaurante Cibus</h4>
+        <div class="footer_icons">
+          <a href="https://www.facebook.com" class="footer_icon">
+            <img src="/img/Icons/facebook.png" alt="Facebook" />
+          </a>
+          <a href="https://www.twitter.com" class="footer_icon"
+            ><img src="/img/Icons/twitter.png" alt="twitter"
+          /></a>
+          <a href="https://www.instagram.com" class="footer_icon"
+            ><img src="/img/Icons/instagram (1).png" alt="ig"
+          /></a>
+        </div>
+      </div>
+      <h4>Derechos reservados ©2020</h4>
+    </footer>
+  </body>
+</html>
